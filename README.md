@@ -1,20 +1,24 @@
-# Dash Goal/Challenge Platform
-
-You can test the site [here](https://challenge-platform.herokuapp.com/).
-
+[NOTICE] This is the most recent and up to date version of the challenge-goal-platform, previous version [here](https://github.com/gaquarius/challenge-platformhosted/) hosted at [here](https://challenge-platform.herokuapp.com/) is out of date and no longer maintained.
 
 ## Installation
 
 ```
-git clone https://github.com/gaquarius/challenge-platform.git
-cd challenge-platform
+git clone https://github.com/HunterSides/dash-challenges-platform.git
+cd dash-challenges-platform
 yarn / npm i
 ```
 
 ### Development server
 
+Steps to run:
+
 ```bash
-yarn dev / npm dev
+1) yarn dev / npm run dev
+2) connect to `localhost:3000/create-wallet`
+3) from there you should be given an address which you will need to fund via `https://testnet-faucet.dash.org/` or `http://faucet.test.dash.crowdnode.io/` to be able to connect to Dash Platform
+4) now reload the page and create your wallet which will be your login credentials for the site
+
+If you run into any issues, try clearing your browsers localstorage and reloading the page
 ```
 
 You can view the development server at `localhost:3000`.
@@ -38,7 +42,7 @@ You can view the development server at `localhost:3000`.
 - [Webpack 5](https://webpack.js.org/)
 - [Tailwind 2](https://tailwindcss.com)
 - [Jest 26](http://jestjs.io/)
-- [PostCss](https://postcss.org/)  
+- [PostCss](https://postcss.org/)
 - [Babel](https://babeljs.io/)
 - [Sass](https://sass-lang.com/)
 - [Eslint](https://eslint.org/)
@@ -76,6 +80,7 @@ You can view the development server at `localhost:3000`.
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
 
 ### Eslint
+
 - [`eslint-config-prettier`](https://www.npmjs.com/package/eslint-config-prettier) - Turns off all rules that are unnecessary or might conflict with Prettier.
 - [`eslint-import-resolver-alias`](https://www.npmjs.com/package/eslint-import-resolver-alias) - a simple Node behavior import resolution plugin for eslint-plugin-import, supporting module alias.
 - [`eslint-plugin-babel`](https://www.npmjs.com/package/eslint-plugin-babel) - an eslint rule plugin companion to babel-eslint.
@@ -83,7 +88,6 @@ You can view the development server at `localhost:3000`.
 - [`eslint-plugin-prettier`](https://www.npmjs.com/package/eslint-plugin-prettier) - Runs prettier as an eslint rule.
 - [`eslint-plugin-react`](https://www.npmjs.com/package/eslint-plugin-react) - React specific linting rules for ESLint.
 - [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks) - Enforces the Rules of React Hooks.
-
 
 ### Plugins
 
@@ -96,7 +100,4 @@ You can view the development server at `localhost:3000`.
 - [`react-refresh-webpack-plugin`](https://github.com/pmmmwh/react-refresh-webpack-plugin) - HMR using React Fast Refresh
 - [`dotenv-webpack`](https://github.com/mrsteele/dotenv-webpack) - Supports dotenv and other environment variables
 - [`@svgr/webpack`](https://github.com/mrsteele/dotenv-webpack) - SVGR can be used as a webpack loader, this way you can import your SVG directly as a React Component.
-- [`babel-jest`](https://www.npmjs.com/package/babel-jest) - Babel jest plugin for transforimg ```.js``` and ```.jsx``` files
-
-
-
+- [`babel-jest`](https://www.npmjs.com/package/babel-jest) - Babel jest plugin for transforimg `.js` and `.jsx` files
