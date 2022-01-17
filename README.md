@@ -3,9 +3,9 @@
 ## Installation
 
 ```
-git clone https://github.com/HunterSides/dash-challenges-platform.git
-cd dash-challenges-platform
-yarn / npm i
+1) git clone https://github.com/HunterSides/dash-challenges-platform.git
+2) cd dash-challenges-platform
+3) yarn / npm i
 ```
 
 ### Development server
@@ -16,13 +16,11 @@ Steps to run:
 1) yarn dev / npm run dev
 2) connect to `localhost:3000/create-wallet`
 3) from there you should be given an address which you will need to fund via `https://testnet-faucet.dash.org/` or `http://faucet.test.dash.crowdnode.io/` to be able to connect to Dash Platform
-4) now reload the page and create your wallet which will be your login credentials for the site
+4) now reload the page and create your wallet which will be your login credentials for the site.
 
-If you run into any issues, try clearing your browsers localstorage and reloading the page
+***note***
+If you receive any network related issues, close the error and attempt to let the page reload (this can take a while). If you continue to receive the error, ctrl+c in your console to close the program, clear your browsers localstorage/cache/refresh cache and repeat steps 1-4.
 ```
-
-You can view the development server at `localhost:3000`.
-(change port in ./config/webpack.dev.js)
 
 ### Unit Test
 
