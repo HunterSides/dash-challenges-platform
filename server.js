@@ -1,14 +1,14 @@
-const express = require('express')
-const path = require('path')
+import express, { static } from 'express'
+import { join } from 'path'
 const port = process.env.PORT || 8080
 const app = express()
 
-const dist = path.join(__dirname, '/dist')
+const dist = join(__dirname, '/dist')
 
-app.use(express.static(dist))
+app.use(static(dist))
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(dist, '/index.html'))
+  res.sendFile(join(dist, '/index.html'))
 })
 
 app.listen(port)
